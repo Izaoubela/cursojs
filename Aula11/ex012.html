@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signos</title>
+</head>
+<body>
+    <h1> Qual é o seu signo?</h1>
+    Minha data de nascimento é <input type="date" name="nascimento" id="nascimento">
+    <input type="button" value="Verificar" onclick = 'Verificar ()'>
+    <div id="signo" >
+
+    </div>    
+<script>
+    function Verificar () {
+        var datanasc = document.getElementById ('nascimento')
+        var mes = datanasc.value.split('-')[1]
+        var signoresul = document.getElementById ('signo')
+        switch (mes){ //condicional como o IF
+            case '01' : 
+                signo.innerHTML = 'Você nasceu em Janeiro'
+                break
+            case '02' : 
+                signo.innerHTML = 'Você nasceu em Fevereiro'
+                break
+            }
+        /*if (mes == 11)  {        
+            signo.innerHTML = 'Você nasceu em Novembro'
+        }else if (mes == 12){
+            signo.innerHTML = 'Você nasceu em Dezembro'
+        }else{
+            signo.innerHTML = 'Não sei seu mês'
+        }*/
+
+    }
+
+
+</script>
+</body>
+
+
+</html>

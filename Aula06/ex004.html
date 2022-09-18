@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+        font: normal 20pt arial;
+
+    }
+    </style>
+</head>
+<body>
+   <script>
+    var nome = window.prompt('Qual é seu nome?')
+    document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras </br>`) // ${} é o placeholder para substituir o + de contaternação, mas ele precisa usar com crase ``
+    document.write(`Seu nome em maisculas é ${nome.toUpperCase()}.</br>`)
+    document.write(`Seu nome em minusculas é ${nome.toLowerCase()}.</br>`)
+    var salário = 1000
+    document.write(`Seu salário é de ${salário.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}.`)//localestring para colocar o 1000 em formato BR, e em ainda é possível colocar o style
+  </script>
+</body>
+</html>

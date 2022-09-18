@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1> Qual a sua NACIONALIDADE?</h1>
+    <p> Eu nasci no <input type="text" name="pais" id="pais"></p> 
+    <input type="button" value="Verificar" onclick= 'Verificar()'>
+    <div id="resultado">
+
+    </div>
+<script>
+  document.addEventListener('keypress', function (event) {
+    if (event.keyCode == 13) {
+        Verificar ()
+    }
+})
+    function Verificar () {
+        var pais = document.getElementById('pais')
+        var resultado = document.getElementById ('resultado')
+        if (pais.value == 'Brasil') {
+            resultado.innerHTML = 'Minha nacionalidade é Brasileiro'
+                } else {
+            resultado.innerHTML = 'Eu sou estrangeiro'
+        }  
+    }
+    
+    
+</script>
+</body>
+</html>
