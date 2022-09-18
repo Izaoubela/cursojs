@@ -60,7 +60,7 @@ function media() {
 
 function analisar() {
     if (numerodigitado <= 0) {
-        alert('Digite um número válido')
+        alert('Digite um número válido!')
     } else {
         analiseDosNumeros.innerHTML = ''
         analiseDosNumeros.innerHTML += `<p> Ao todo temos ${todososnumeros.length} números adicionados. </p>`
