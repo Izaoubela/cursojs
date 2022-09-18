@@ -21,7 +21,7 @@ function adicionarnumero() {
 }
 
 function verificarNumero(numero){
-    if(numero <=0 || numero >= 100) {
+    if (numero <=0 || numero >= 100) {
         return true
     } else {
         return false
