@@ -14,9 +14,12 @@ function adicionarnumero() {
     } else {
         todososnumeros.push(numerodigitado)
         areacomnumeros.innerHTML = ''   
-        for (let volta = 0; volta < todososnumeros.length; volta++) {
-            areacomnumeros.innerHTML += `Numero ${todososnumeros[volta]} adicionado \n`
-        }
+        // for (let volta = 0; volta < todososnumeros.length; volta++) {
+        //     areacomnumeros.innerHTML += `Numero ${todososnumeros[volta]} adicionado \n`
+        // }
+        todososnumeros.forEach(numero => {
+            areacomnumeros.innerHTML += `Numero ${numero} adicionado \n`
+        })
     }
 }
 
